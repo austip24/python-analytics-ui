@@ -6,14 +6,22 @@ Variables:
 
 from dash import html, register_page
 
+from utils.constants import ID_HOME_LINK
+
 register_page(
     __name__,
-    path='/'
+    path='/',
+    sidebar=True,
+    order=0,
+    id_link=ID_HOME_LINK,
 )
 
 layout = html.Div(
-    html.Div(
-        'Welcome to the Dash Test App',
-        className='text-rose-500 text-center font-bold'
-    )
+    [
+        html.Div(
+            'Welcome to the App',
+            className='font-bold text-5xl pb-40 text-slate-700 x:text-6xl'
+        ),
+    ],
+    className='flex h-full items-center justify-center'
 )
