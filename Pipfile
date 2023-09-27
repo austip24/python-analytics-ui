@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 dash = "*"
 pandas = "*"
+flask = "*"
+dash-svg = "*"
+dash-mantine-components = "*"
+dash-iconify = "*"
 
 [dev-packages]
 

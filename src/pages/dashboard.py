@@ -6,7 +6,7 @@ Variables:
 
 from dash import html, register_page
 
-from utils.constants import ID_DASHBOARD_LINK
+from src.utils.constants import ID_DASHBOARD_LINK
 
 register_page(
     __name__,
@@ -18,10 +18,10 @@ register_page(
 layout = html.Div(
     [
         html.Div(
-            'Dashboard', className="""py-2 flex justify-center bg-slate-700 text-emerald-50 font-semibold"""),
+            'Dashboard', className="""py-2 flex justify-center font-semibold"""),
         html.Div([
             html.P('This is a placeholder dashboard.',
-                   className='mb-4 text-inherit')
+                   className='mb-4')
         ])
     ],
     className='min-h-screen'
