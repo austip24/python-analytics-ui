@@ -1,6 +1,6 @@
 # Getting Started
 
-You will need Python 3.11 get started. I am using pipenv to install python-based dependencies. You will also need Node.js to make use of Tailwind. The latest supported (v18+) version will work just fine. There will NOT be a Node.js server hosting the app. Node.js is used solely for development purposes with styling. To get started, clone this repository to the device/machine you want to run the application on.
+You will need Python 3.11 to get started. I am using pipenv to install python-based dependencies. You will also need Node.js to make use of Tailwind. The latest supported (v18+) version will work just fine. There will NOT be a Node.js server hosting the app. Node.js is used solely for development purposes with styling. To get started, clone this repository to the device/machine you want to run the application on.
 
 ## Installation
 
