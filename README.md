@@ -11,13 +11,13 @@ You will need Python 3.11 get started. I am using pipenv to install python-based
 3. To check that you have everything set up properly, open a terminal of your choice and run the following commands. The result of each command should be a version number. If you get an error indicating that the command is not found, then you need to add the respective executable to your system path.
 
 ```bash
-  # these are included by installing Python
-  pip --version
-  python --version
+# these are included by installing Python
+pip --version
+python --version
 
-  # these are included by installing Node
-  node --version
-  npm --version
+# these are included by installing Node
+node --version
+npm --version
 ```
 
 ### Environment Setup
@@ -34,7 +34,7 @@ pip install --user pipenv
 3. Run the following command to create a new virtual environment with the dependencies installed:
 
 ```bash
-   pipenv install
+pipenv install
 ```
 
 4. Now, you are ready to run the application.
@@ -47,13 +47,13 @@ To run the application, you will need two terminals open. One for the python scr
 2. In one terminal, run the following command to start the Dash app. This assumes you have already set up a virtual environment using pipenv. If not, you will have to run the script using whatever way is required with the method you used to create a virtual environment.
 
 ```bash
-  pipenv run python app.py
+pipenv run python app.py
 ```
 
 3. In the other terminal, run the following command to execute the Tailwind script.
 
 ```bash
-  npm run tailwind-watch
+npm run tailwind-watch
 ```
 
 4. Your application should now be running with hot-reloading available for both Dash and Tailwind. Navigate to the URL specified in the terminal used to execute the Python/Dash script.
