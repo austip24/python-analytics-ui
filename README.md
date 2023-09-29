@@ -56,7 +56,7 @@ pipenv run python app.py
 npm run tailwind-watch
 ```
 
-4. Your application should now be running with hot-reloading available for both Dash and Tailwind. Navigate to the URL specified in the terminal used to execute the Python/Dash script.
+4. Your application should now be running with hot-reloading available for both Dash and Tailwind. Navigate to the URL specified in the terminal used to execute the Python/Dash script to view the app.
 
 ## Directory Structure
 
@@ -67,7 +67,7 @@ Root
 ├─ 📁src   # contains application code
 │  ├─ 📁assets  # contains styles and any static files/images
 │  │  ├─ 📁css
-│  │  │  ├─ 📁dist  # this only exists if you execute the Tailwind script
+│  │  │  ├─ 📁dist  # this only exists if you execute the Tailwind script. an output.css file will be generated that will contain the styles output by Tailwind.
 │  │  │  └─ 📁src
 │  │  │     └─ 📄input.css   # Tailwind input
 │  │  └─ 📁static
@@ -79,8 +79,8 @@ Root
 ├─ 📄.gitignore
 ├─ 📄app.py           # main executable for script
 ├─ 📄package-lock.json
-├─ 📄package.json 
-├─ 📄Pipfile          
+├─ 📄package.json
+├─ 📄Pipfile
 ├─ 📄Pipfile.lock
 ├─ 📄requirements.txt
 ├─ 📄README.md
