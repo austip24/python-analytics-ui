@@ -14,5 +14,5 @@ def header() -> html.Header:
         [
             mode_toggle()
         ],
-        className='z-10 p-2 h-16 fixed top-0 left-0 right-0 border-b flex items-center justify-end'
+        className='z-10 p-2 h-16 fixed top-0 left-0 right-0 border-b flex items-center justify-end bg-background'
     )

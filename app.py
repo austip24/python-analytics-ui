@@ -25,11 +25,11 @@ def main() -> None:
                     [
                         dash.page_container
                     ],
-                    className='pt-16'
+                    className='pt-16 grow flex flex-col'
                 )
             ],
                 id=ID_MAIN_CONTAINER,
-                className='pl-48 w-full z-0'
+                className='w-full z-0 flex flex-col'
             )
         ],
         className='relative flex min-h-screen w-full bg-background text-foreground',
