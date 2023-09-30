@@ -11,6 +11,7 @@ from src.utils.constants import ID_DASHBOARD_LINK
 register_page(
     __name__,
     sidebar=True,
+    title='Dashboard',
     order=1,
     id_link=ID_DASHBOARD_LINK
 )
@@ -24,5 +25,5 @@ layout = html.Div(
                    className='mb-4')
         ])
     ],
-    className='min-h-screen'
+    className='h-full'
 )

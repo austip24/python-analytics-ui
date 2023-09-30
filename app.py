@@ -1,8 +1,9 @@
 import dash
 from dash import Dash, html
-from src.components.sidebar import create_sidebar_component
+from src.components.header import header
+from src.components.sidebar import sidebar
 
-from src.utils.constants import ID_MAIN_CONTAINER
+from src.utils.constants import ID_APP_CONTAINER, ID_MAIN_CONTAINER
 
 
 def main() -> None:
@@ -17,15 +18,22 @@ def main() -> None:
 
     app.layout = html.Div(
         [
-            create_sidebar_component(),
+            sidebar(),
             html.Div([
-                dash.page_container
+                header(),
+                html.Div(
+                    [
+                        dash.page_container
+                    ],
+                    className='pt-16'
+                )
             ],
                 id=ID_MAIN_CONTAINER,
-                className='grow z-0 px-12'
-                )
+                className='pl-48 w-full z-0'
+            )
         ],
-        className='relative flex w-full h-screen overflow-hidden'
+        className='relative flex min-h-screen w-full bg-background text-foreground',
+        id=ID_APP_CONTAINER
     )
 
     app.run(debug=True, reloader_interval=1, threaded=True)
