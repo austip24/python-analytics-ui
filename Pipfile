@@ -10,6 +10,8 @@ flask = "*"
 dash-svg = "*"
 dash-mantine-components = "*"
 dash-iconify = "*"
+faker = "*"
+numpy = "*"
 
 [dev-packages]
 

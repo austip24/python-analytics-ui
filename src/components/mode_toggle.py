@@ -24,7 +24,6 @@ def mode_toggle() -> html.Button:
           State(ID_APP_CONTAINER, 'className'),
           Input(ID_THEME_BUTTON, 'n_clicks'))
 def toggle_theme(className, n_clicks):
-    print(f'{n_clicks = }')
     if n_clicks % 2 == 0:
         return [f'{className.replace("dark", "")} dark', DashIconify(icon='bi:sun', width=24)]
     return [f'{className.replace("dark", "")}', DashIconify(icon='bi:moon', width=24)]
